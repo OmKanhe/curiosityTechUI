@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CuriosityTech</title>
+    <link rel="icon" type="image/x-icon/" href="./Assets/images/IMG-20240621-WA0000.jpg">
+    <link rel="stylesheet" href="../Assets/css/home.css" />
+    <link rel="icon" href="../Assets/images/ctIcon.png" type="image/icon" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prata&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar" style="height: 115px">
+      <div class="logo">
+        <a href="/index.html"
+          ><img src="../Assets/images/logo-trans.png" alt="Logo"
+        /></a>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li data-aos="fade-right" data-aos-offset="120" data-aos-delay="100">
+          <a href="index.html">Home</a>
+        </li>
+        <li data-aos="fade-right" data-aos-offset="120" data-aos-delay="200">
+          <a href="/html/about.html">About</a>
+        </li>
+        <li
+          class="dropdown"
+          data-aos="fade-right"
+          data-aos-offset="120"
+          data-aos-delay="300"
+        >
+          <a href="/html/courses.html">Courses</a>
+          <!-- <ul class="dropdown-menu">
+            <li><a href="courses.html">Web Development</a></li>
+            <li><a href="courses.html">UI/UX Design</a></li>
+            <li><a href="courses.html">Data Analytics</a></li>
+            <li><a href="courses.html">Machine Learning</a></li>
+          </ul> -->
+        </li>
+        <li
+          class="dropdown"
+          data-aos="fade-right"
+          data-aos-offset="120"
+          data-aos-delay="400"
+        >
+          <a target="_blank" href="https://blogs.curiositytech.in/blog/">Blogs</a>
+          <li data-aos="fade-right" data-aos-offset="120" data-aos-delay="500">
+
+            <a href="https://community.curiositytech.in/">Communities</a>
+          </li>
+        </li>
+        <li data-aos="fade-right" data-aos-offset="120" data-aos-delay="500">
+          <a href="/html/contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="ripple-background">
+      <div class="circle xxlarge shade1"></div>
+      <div class="circle xlarge shade2"></div>
+      <div class="circle large shade3"></div>
+      <div class="circle medium shade4"></div>
+      <div class="circle small shade5"></div>
+    </div>
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <!-- New div for background image -->
+      <div class="hero-content">
+        <div class="hero-heading">
+          <img
+            class="image"
+            data-aos="zoom-in"
+            src="../Assets/images/cIcon.png"
+          />
+          <h1>
+            <div
+              data-aos="fade-right"
+              data-aos-offset="120"
+              data-aos-duration="500"
+              data-aos-once="true"
+            >
+              <i>Embark On</i> <br />
+            </div>
+            <span>Curiosity Tech</span><br /><i>
+              <div
+                data-aos="fade-left"
+                data-aos-offset="120"
+                data-aos-duration="500"
+                data-aos-once="true"
+              >
+                - Training Park
+              </div>
+            </i>
+          </h1>
+        </div>
+        <div class="hero-main">
+          <div class="hero-text-buttons">
+            <div class="hero-paragraph">
+              <p>
+                Your gateway to a world of innovation and knowledge! <br> We believe that the future belongs to those who continuously embrace <br> and master the latest advancements in technology.
+
+
+
+
+
+
+
+              </p>
+            </div>
+            <hr />
+            <div class="hero-buttons">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLScpvVsPHAzgOyN5DeqkTIaChNKcisfPH9ihIiSC5Q8MLWzg6A/viewform"
+                class="btn"
+                >Get Started</a
+              >
+              <a href="./html/courses.html" class="btn" id="btn-explore"
+                >Explore Now</a
+              >
+            </div>
+          </div>
+          <div class="hero-image-explore">
+            <img
+              src="../Assets/images/Webinar-pana.svg"
+              alt="Right of Paragraph Image"
+              class="paragraph-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Elements Section -->
+    <section class="elements">
+      <div class="element-box">
+        <div class="stats-container">
+          <div class="stat">
+            <h1 id="projects-count">7000</h1>
+            <p>Students</p>
+          </div>
+          <hr />
+          <div class="stat">
+            <h1 id="clients-count">700</h1>
+            <p>Experts</p>
+          </div>
+          <hr />
+          <div class="stat">
+            <h1 id="experts-count">50</h1>
+            <p>Courses</p>
+          </div>
+        </div>
+        <img
+          src="../Assets/images/Online learning-bro.svg"
+          alt="Box Background"
+          class="bg"
+        />
+      </div>
+      <div class="element-content">
+        <h2>Elevate Your Education Experience</h2>
+        <hr />
+        <p>
+          Elevate your education experience with our advanced edutech platform.
+          Access personalized learning paths, interactive courses, and
+          expert-led tutorials designed to <br />suit your unique educational
+          goals. Join a vibrant community of learners and embark on a
+          transformative journey towards knowledge and skills enhancement.
+          <br />
+          <span id="explore-para">Explore, learn, and achieve with us.</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+  <section class="skills">
+    <h2>
+      <span id="skill-headline"> Master In-Demand Skills </span> <br />
+      with Our Comprehensive Learning Platform
+    </h2>
+    <div class="skills-box">
+      <div class="skill">
+        <img src="../Assets/images/coding_2703928.png" alt="Bootstrap" />
+        <p>Web Development</p>
+      </div>
+      <div class="skill">
+        <img src="../Assets/images/artifical-intelligence_13453089.png" alt="HTML" />
+        <p>Machine Learning</p>
+      </div>
+      <div class="skill">
+        <img src="../Assets/images/bar_15688473.png" alt="CSS" />
+        <p>Data Analytics</p>
+      </div>
+      <div class="skill">
+        <img src="../Assets/images/creative_11434930.png" alt="JavaScript" />
+        <p>Deep Learning</p>
+      </div>
+    </div>
+    <div class="skills-box">
+      <div class="skill">
+        <img src="../Assets/images/physics_753244.png" alt="React" />
+        <p>MERN Stack</p>
+      </div>
+      <div class="skill">
+        <img
+          src="../Assets/images/wordpress_13170745.png"
+          alt="WordPress"
+        />
+        <p>WordPress</p>
+      </div>
+    </div>
+
+    <div class="skills-box">
+      <div class="skill">
+        <img src="../Assets/images/robot_2152634.png" alt="PHP" />
+        <p>Robotics</p>
+      </div>
+
+      <div class="skill">
+        <img src="../Assets/images/development_3623831.png" alt="Sass" />
+        <p>Mobile App Development</p>
+      </div>
+      <div class="skill">
+        <img src="../Assets/images/internet_17421504.png" alt="Angular" />
+        <p>Cloud Computing</p>
+      </div>
+    </div>
+    <div class="skills-box">
+      <div class="skill">
+        <img src="../Assets/images/cyber-security_7440034.png" alt="Node.js" />
+        <p>Cyber Security</p>
+      </div>
+    </div>
+  </section>
+  
+
+    <!-- Our Services Section -->
+    <section class="services">
+      <h2>Our Courses</h2>
+      <p>
+        Comprehensive Website Services to Ignite Your Online Success. <br />
+        Empower Your Business with Powerful Online Services from our Website.
+      </p>
+      <div class="services-box">
+        <div class="service-card">
+          <div class="service-header">
+            <img
+              src="../Assets/images/development-1.png"
+              alt="Website Development"
+            />
+            <a href="courses.html"><span>↑</span></a>
+          </div>
+          <div class="service-info">
+            <h3>Full Stack Development</h3>
+          </div>
+          <div class="service-footer">
+            <img
+              src="../Assets/images/full.png"
+              alt="Website Development Large"
+            />
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-header">
+            <img src="../Assets/images/XMLID_1809_.png" alt="App Development" />
+            <a href="courses.html"><span>↑</span></a>
+          </div>
+          <div class="service-info">
+            <h3>Mobile App Development</h3>
+          </div>
+          <div class="service-footer">
+            <img src="../Assets/images/mob.avif" alt="App Development Large" />
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-header">
+            <img
+              src="../Assets/images/brainstorming-1.png"
+              alt="Digital Marketing"
+            />
+            <a href="courses.html"><span>↑</span></a>
+          </div>
+          <div class="service-info">
+            <h3>AI/Deep Learning</h3>
+          </div>
+          <div class="service-footer">
+            <img src="../Assets/images/AI.jpg" alt="Digital Marketing Large" />
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-header">
+            <img
+              src="../Assets/images/brainstorming-1.png"
+              alt="Digital Marketing"
+            />
+            <a href="courses.html"><span>↑</span></a>
+          </div>
+          <div class="service-info">
+            <h3>ML/Data Analytics</h3>
+          </div>
+          <div class="service-footer">
+            <img
+              src="../Assets/images/robo.png"
+              alt="Digital Marketing Large"
+            />
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-header">
+            <img
+              src="../Assets/images/branding-1.png"
+              alt="Website Maintenance"
+            />
+            <a href="courses.html"><span>↑</span></a>
+          </div>
+          <div class="service-info">
+            <h3>Data Science</h3>
+          </div>
+          <div class="service-footer">
+            <img
+              src="../Assets/images/data-science.jpg"
+              alt="Website Maintenance Large"
+            />
+          </div>
+        </div>
+        <!-- <div class="service-card">
+                <div class="service-header">
+                    <img src="../Assets/images/Group-1-2.png" alt="Graphic Design">
+                    <a href="courses.html"><span>↑</span></a>
+                </div>
+                <div class="service-info">
+                    <h3>Figma User Interface</h3>
+                </div>
+                <div class="service-footer">
+                    <img src="../Assets/images/uiux.jpg" alt="Graphic Design Large">
+                </div>
+            </div> -->
+        <div class="service-card">
+          <div class="service-header">
+            <img
+              src="../Assets/images/optimization-1.png"
+              alt="Domain & Hosting"
+            />
+            <a href="courses.html"><span>↑</span></a>
+          </div>
+          <div class="service-info">
+            <h3>Software Testing</h3>
+          </div>
+          <div class="service-footer">
+            <img
+              src="../Assets/images/testing.jpg"
+              alt="Domain & Hosting Large"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="service-buttons">
+        <a href="courses.html" class="btn">View More</a>
+      </div>
+    </section>
+
+    <!-- Bar Section -->
+    <section class="bar">
+      <div class="bar-content" id="animated-bar">
+        <div class="bar-flex-container">
+          <p style="font-family: 'Prata'">
+            <!-- <img src="../Assets/images/Vector-2.png" alt="vector" class="vector">  -->
+            Skilled Trainers
+          </p>
+          <p style="font-family: 'Prata'">
+            <!-- <img src="../Assets/images/Vector-2.png" alt="vector" class="vector">  -->
+            Flexible Schedule
+          </p>
+          <p style="font-family: 'Prata'">
+            <!-- <img src="../Assets/images/Vector-2.png" alt="vector" class="vector"> -->
+            Practical Projects
+          </p>
+          <p style="font-family: 'Prata'">
+            <!-- <img src="../Assets/images/Vector-2.png" alt="vector" class="vector"> -->
+            Career Growth
+          </p>
+          <div class="extras">
+            <p style="font-family: 'Prata'">
+              <!-- <img src="/Assets/images/Vector-2.png" alt="vector" class="vector">  -->
+              Learn Anything
+            </p>
+            <p style="font-family: 'Prata'">
+              <!-- <img src="/Assets/images/Vector-2.png" alt="vector" class="vector"> -->
+              Learn Together
+            </p>
+            <p style="font-family: 'Prata'">
+              <!-- <img src="/Assets/images/Vector-2.png" alt="vector" class="vector">  -->
+              Bright Mind & Idea
+            </p>
+            <!-- <p><img src="/Assets/images/Vector-2.png" alt="vector" class="vector"> Customer Preference</p> -->
+            <p style="font-family: 'Prata'">
+              <!-- <img src="/Assets/images/Vector-2.png" alt="vector" class="vector"> -->
+              Online Course
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <!-- <div class="container">
+        <h2>Testimonial</h2>
+        <h1 style="text-align: center" >What our students say about us</h1>
+        <h4>Here is what our students have to say about working with CuriosityTech</h4>
+        <div class="testimonials" id="testimonials">
+            <div class="testimonial-card">
+                <p class="testimonial-text">" From the initial consultation to ongoing support and optimization, their team has been responsive, proactive, and a pleasure to work with. "</p>
+                <div class="author-info">
+                    <img src="author-photo.jpg" alt="Michael Brown" class="author-photo">
+                    <div class="author-details">
+                        <h3 class="author-name">Michael Brown</h3>
+                        <p class="author-title">Founder</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card hvr-float-bounce" data-aos="flip-left" data-aos-offset="20", data-aos-delay="700" data-aos-anchor-placement="top-center" data-aos-once="true">
+                <div class="testimonial-content">
+                    <img src="../Assets/images/bhojraj.jpg" alt="Bhojraj">
+                    <div class="text-content">
+                        <p><strong>The coaching at CuriosityTech is top-notch. The trainers are knowledgeable and always willing to help. 5 stars from me!</strong></p>
+                        <p>~ Bhojraj</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card hvr-float-bounce" data-aos="flip-left" data-aos-offset="20", data-aos-delay="900" data-aos-anchor-placement="top-center" data-aos-once="true">
+                <div class="testimonial-content">
+                    <img src="../Assets/images/Disha.jpg" alt="Disha">
+                    <div class="text-content">
+                        <p><strong>I had a wonderful experience learning at CuriosityTech. The courses are well-structured and the support is fantastic.</strong></p>
+                        <p>~ Disha</p>
+                    </div>    
+                </div>
+            </div>
+            <div class="testimonial-card hvr-float-bounce" data-aos="flip-left" data-aos-offset="20", data-aos-delay="1100" data-aos-anchor-placement="top-center" data-aos-once="true">
+                <div class="testimonial-content">
+                    <img src="../Assets/images/Diksha.jpg" alt="Diksha">
+                    <div class="text-content">
+                        <p><strong>The environment at CuriosityTech is conducive to learning. I gained a lot of practical knowledge that I could apply immediately.</strong></p>
+                        <p>~ Diksha</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card hvr-float-bounce" data-aos="flip-left" data-aos-offset="20", data-aos-delay="1300" data-aos-anchor-placement="top-center" data-aos-once="true">
+                <div class="testimonial-content">
+                    <img src="../Assets/images/Omm.jpg" alt="Omm">
+                    <div class="text-content">
+                        <p><strong>CuriosityTech exceeded my expectations. The hands-on approach and real-world examples were invaluable. 5 stars!</strong></p>
+                        <p>~ Omm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- TESTIMONIALS -->
+
+    <section class="section__container">
+      <h2>Testimonials</h2>
+      <h1>What our student's say</h1>
+      <div class="section__carousel">
+        <div class="section__carousel-inner">
+          <div class="section__card">
+            <div>
+              <img src="../Assets/images/user-3.jpg" alt="user" />
+              <h5>Allan Collins</h5>
+              <h6>Managing Director</h6>
+            </div>
+            <div>
+              <span><i class="ri-double-quotes-l"></i></span>
+              <h4>Love the simplicity</h4>
+              <p>
+                They understood our brand and created a stunning website design.
+                Professional, responsive, and on-time delivery. Highly
+                recommended!
+              </p>
+            </div>
+          </div>
+
+          <div class="section__card">
+            <div>
+              <img src="../Assets/images/user-2.jpg" alt="user" />
+              <h5>Tanya Grant</h5>
+              <h6>CEO & Founder</h6>
+            </div>
+            <div>
+              <span><i class="ri-double-quotes-l"></i></span>
+              <h4>Excellent Designs</h4>
+              <p>
+                Efficient, reliable, and results-oriented. Visually appealing
+                website, improved online visibility. Highly recommended!
+              </p>
+            </div>
+          </div>
+
+          <div class="section__card">
+            <div>
+              <img src="../Assets/images/user-1.jpg" alt="user" />
+              <h5>Clay Washington</h5>
+              <h6>Fashion Designer</h6>
+            </div>
+            <div>
+              <span><i class="ri-double-quotes-l"></i></span>
+              <h4>Efficient and Reliable</h4>
+              <p>
+                Best decision we made. Stunning website, exceptional support.
+                Always available and prompt issue resolution. Hassle-free
+                experience!
+              </p>
+            </div>
+          </div>
+
+          <div class="section__card">
+            <div>
+              <img src="../Assets/images/user-1.jpg" alt="user" />
+              <h5>Allan Collins</h5>
+              <h6>Managing Director</h6>
+            </div>
+            <div>
+              <span><i class="ri-double-quotes-l"></i></span>
+              <h4>Love the simplicity</h4>
+              <p>
+                They understood our brand and created a stunning website design.
+                Professional, responsive, and on-time delivery. Highly
+                recommended!
+              </p>
+            </div>
+          </div>
+
+          <div class="section__card">
+            <div>
+              <img src="../Assets/images/user-2.jpg" alt="user" />
+              <h5>Tanya Grant</h5>
+              <h6>CEO & Founder</h6>
+            </div>
+            <div>
+              <span><i class="ri-double-quotes-l"></i></span>
+              <h4>Excellent Designs</h4>
+              <p>
+                Efficient, reliable, and results-oriented. Visually appealing
+                website, improved online visibility. Highly recommended!
+              </p>
+            </div>
+          </div>
+
+          <div class="section__card">
+            <div>
+              <img src="../Assets/images/user-3.jpg" alt="user" />
+              <h5>Clay Washington</h5>
+              <h6>Fashion Designer</h6>
+            </div>
+            <div>
+              <span><i class="ri-double-quotes-l"></i></span>
+              <h4>Efficient and Reliable</h4>
+              <p>
+                Best decision we made. Stunning website, exceptional support.
+                Always available and prompt issue resolution. Hassle-free
+                experience!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel__dots">
+        <span class="dot" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+        <span class="dot" data-index="3"></span>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <div class="container-contact">
+      <div
+        class="faq-section-container"
+        data-aos="zoom-out-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+        data-aos-once="true"
+      >
+        <div class="faq-section">
+          <h2>
+            <img src="../Assets/images/arrow-removebg-preview.png" />What we do?
+          </h2>
+          <h3>
+            At Curiosity Tech, we design and develop innovative solutions through a structured process: Define, Research, Design, Develop, Test, and Launch. Our goal is to deliver seamless user experiences and maximum impact. Transforming your vision into reality.  
+          </h3>
+        </div>
+        <div class="faq-section">
+          <div class="faq-question">1. Define Goals and Requirements 🌐</div>
+          <div class="faq-answer">
+            At CuriosityTech, we understand the purpose of the website, its
+            target audience, and the specific goals it needs to achieve.
+            Determine the features, functionality, and content that the project
+            will require.
+          </div>
+        </div>
+        <div class="faq-section">
+          <div class="faq-question">2. Research and Planning 📝</div>
+          <div class="faq-answer">
+            Conduct market research to gather insights about the target
+            audience, competitors, and industry trends. Create a sitemap to
+            outline the structure and hierarchy of the project. Consider the
+            user journey and how users will navigate through the project.
+          </div>
+        </div>
+        <div class="faq-section">
+          <div class="faq-question">3. Design and Development 💻</div>
+          <div class="faq-answer">
+            Focus on designing a user-friendly experience by creating wireframes
+            or prototypes. This involves creating the layout, structure, and
+            functionality of each page, ensuring intuitive navigation and easy
+            access to information.
+          </div>
+        </div>
+        <div class="faq-section">
+          <div class="faq-question">4. Testing and Optimization 🧪</div>
+          <div class="faq-answer">
+            Conduct thorough testing to identify and fix any issues, such as
+            broken links, browser compatibility problems, or usability concerns.
+            Optimize the website’s performance, including page load times and
+            mobile responsiveness.
+          </div>
+        </div>
+        <div class="faq-section">
+          <div class="faq-question">5. Launch and Deployment 🚀</div>
+          <div class="faq-answer">
+            Deploy the website on a web hosting platform or server. Ensure
+            proper domain and hosting setup, configure security measures (such
+            as SSL certificates), and monitor the website’s performance.
+          </div>
+        </div>
+      </div>
+      <div
+        class="contact-form hvr-glow"
+        data-aos="zoom-out-left"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+        data-aos-once="true"
+      >
+        <h2 style="text-align: center">Drop Us a Message</h2>
+        <form action="#" method="POST" id="form">
+
+          <input type="hidden" name="access_key" value="02cef9eb-79fe-402a-a835-fe97168d3907">
+    <input type="hidden" name="subject" value="New Submission from Web3Forms">
+    <input type="checkbox" name="botcheck" id="" style="display: none;">
+
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="course">Interested Course:</label>
+          <input type="text" id="course" name="course" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit">Submit</button>
+          <div style="text-align: center; margin-top: 1.5rem;" id="result"></div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="main-content">
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-divider"></div>
+          <div class="footer-right">
+            <div class="footer-content">
+              <div class="footer-img">
+                <img
+                  src="../Assets/images/IMG-20240621-WA0001.jpg"
+                  alt="logo"
+                />
+              </div>
+              <div class="content">
+                <h3>
+                  Embark on a journey of endless possibilities with Curiosity
+                  Tech Academy. Uncover your potential, embrace innovation, and
+                  <br />shape your future with the power of technology.
+                </h3>
+              </div>
+            </div>
+            <div class="contact-box1">
+              <div class="contact-box">
+                <div class="contact-item">
+                  <span>Email:</span> <a href="mailto:contact@curiositytech.com">contact@curiositytech.in</a> 
+                </div>
+                <div class="contact-item">
+                  <span>Mobile:</span><a  href="tel:+919545400369">+91-9860555369</a> 
+                </div>
+              </div>
+              <div class="contact-item">
+                <span>Address:</span><a href="https://maps.app.goo.gl/5jVEQQ5U94M2a9zN6">1st Floor, Plot No 81, Wardha Rd, Gajanan Nagar, Nagpur.</a> 
+              </div>
+            </div>
+          </div>
+          <div class="footer-divider-vertical"></div>
+          <div class="footer-left">
+            <div class="footer-column">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./html/about.html">About</a></li>
+                <li><a href="./html/courses.html">Courses</a></li>
+                <li><a href="./html/contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3>Popular Courses</h3>
+              <ul>
+                <li><a href="./html/courses.html">UI UX / Web Page Design</a></li>
+                <li><a href="./html/courses.html">Android Application</a></li>
+                <li><a href="./html/courses.html">Database Management</a></li>
+                <li><a href="./html/courses.html">Data Analytics</a></li>
+                <li><a href="./html/courses.html">AI/ML</a></li>
+              </ul>
+            </div>
+            <div class="footer-divider"></div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            © Curiosity Tech 2023. | <a href="#">Privacy Policy</a> |
+            <a href="#">Terms & Conditions</a> |
+            <a
+              href="https://www.facebook.com/people/Curiosity-Tech/100095248902197/"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/curiositytechpark?igsh=dHpmeWRveGpjY28w"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://www.linkedin.com/company/curiosity-tech/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../Assets/js/count.js"></script>
+    <script src="../Assets/js/nav.js"></script>
+    <script src="./Assets/js/script.js" ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="../Assets/js/updatedTestimonials.js"></script>
+    <script src="../Assets//js/testomonial.js"></script>
+    <script src="../Assets/js/contactForm.js"></script>
+  </body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="../Assets/images/ctIcon.png" type="image/icon" />
+    <style>
+        body{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Ensure space between logo and nav items */
+  background-color: #f5f7f8;
+  box-shadow: 0 4px 8px rgba(165, 155, 168, 0.495);
+  height: 135px;
+  /* Increased height */
+  padding: 0 20px;
+  /* Add some padding for spacing */
+}
+
+.navbar .logo {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  /* Align logo to the left */
+}
+
+.navbar .logo img {
+  width: 160px;
+  margin-left: 155px;
+  margin-top: 15px;
+}
+
+.nav-links {
+  flex: 2;
+  display: flex;
+  gap: 60px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  color: #211951;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  position: relative;
+  transition: color 0.3s ease;
+  font-family: "Inter", Sans-serif;
+}
+
+.nav-links a:hover {
+  color: #8576ff;
+}
+
+.nav-links a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #8576ff;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  border-radius: 5px;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.nav-links .dropdown-menu li {
+  display: block;
+  margin-top: 0.7rem;
+  padding: 10px 1.3rem;
+  font-family: "Inter", Sans-serif;
+}
+
+.nav-links .dropdown-menu li:hover {
+  background-color: #8576ff;
+}
+
+.nav-links .dropdown-menu li:hover a {
+  color: #ffffff;
+}
+
+.nav-links .dropdown-menu a {
+  color: #211951;
+  font-weight: normal;
+  display: block;
+  font-family: "Inter", Sans-serif;
+  text-decoration: none;
+}
+
+.nav-links .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background-color: #000;
+  margin-bottom: 4px;
+  font-family: "Inter", Sans-serif;
+}
+
+.nav-links a.active {
+  color: #8576ff;
+  z-index: 1;
+}
+
+/* Display hamburger menu in mobile view */
+@media (max-width: 768px), (max-width: 468px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    /* Ensure space between logo and hamburger */
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    position: absolute;
+    top: 135px;
+    /* Adjusted to match the navbar height */
+    left: 0;
+    background-color: #f5f7f8;
+    box-shadow: 0 4px 8px rgba(165, 155, 168, 0.495);
+  }
+
+  .nav-links.active {
+    display: flex;
+    z-index: 2;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links a {
+    padding: 15px 0;
+    width: 100%;
+    display: block;
+  }
+
+  .nav-links .dropdown-menu {
+    position: static;
+    z-index: 1;
+    background-color: #f5f7f8;
+  }
+
+  .nav-links .dropdown-menu li {
+    padding: 10px;
+  }
+
+  .navbar .logo img {
+    margin: 0;
+  }
+}
+
+#hero-section{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 0 7rem;
+}
+
+#hero-section p{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #5c46ff;
+    
+}
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar" style="height: 115px">
+        <div class="logo">
+          <a href="../index.html"
+            ><img src="../Assets/images/logo-trans.png" alt="Logo"
+          /></a>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links">
+          <li data-aos="fade-right" data-aos-offset="120" data-aos-delay="100">
+            <a href="../index.html">Home</a>
+          </li>
+          <li data-aos="fade-right" data-aos-offset="120" data-aos-delay="200">
+            <a href="/html/about.html">About</a>
+          </li>
+          <li
+            class="dropdown"
+            data-aos="fade-right"
+            data-aos-offset="120"
+            data-aos-delay="300"
+          >
+            <a href="/html/courses.html">Courses</a>
+            <!-- <ul class="dropdown-menu">
+              <li><a href="courses.html">Web Development</a></li>
+              <li><a href="courses.html">UI/UX Design</a></li>
+              <li><a href="courses.html">Data Analytics</a></li>
+              <li><a href="courses.html">Machine Learning</a></li>
+            </ul> -->
+          </li>
+          <li
+            class="dropdown"
+            data-aos="fade-right"
+            data-aos-offset="120"
+            data-aos-delay="400"
+          >
+            <a target="_blank" href="https://blogs.curiositytech.in/blog/">Blogs</a>
+            <li data-aos="fade-right" data-aos-offset="120" data-aos-delay="500">
+  
+              <a target="_blank" href="https://blogs.curiositytech.in/blog/">Communities</a>
+            </li>
+          </li>
+          <li data-aos="fade-right" data-aos-offset="120" data-aos-delay="500">
+            <a href="/html/contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+
+
+      <!-- HERO SECTION -->
+    <div id="hero-section">
+        <p>Get Ready for Something Big! 🤯 <br> <br> We're Launching Soon 🚀</p>
+    </div>
+</body>
+</html>
